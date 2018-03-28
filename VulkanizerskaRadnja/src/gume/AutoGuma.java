@@ -58,10 +58,10 @@ public class AutoGuma {
 	/**
 	 * Metoda koja postavlja novu vrednost atributa precnik gume na osnovu unetog parametra
 	 * @param precnik je nova vrednost atributa precnik i to kao int vrednost
-	 * @throws RuntimeException ako je parametar van opsega tj. ako je manji od 13 i veci od 22
+	 * @throws RuntimeException ako je parametar van opsega tj. ako je manji od 13 ili veci od 22
 	 */
 	public void setPrecnik(int precnik) {
-		if (precnik < 13 && precnik > 22)
+		if (precnik < 13 || precnik > 22)
 			throw new RuntimeException("Precnik van opsega");
 	this.precnik = precnik;
 	}
@@ -77,10 +77,11 @@ public class AutoGuma {
 	/**
 	 * Metoda koja postavlja novu vrednost za sirinu gume na osnovu unetog parametra
 	 * @param sirina je nova vrednost za sirinu gume i to kao int vrednost
-	 * @throws RuntimeException ako je vrednost unetog parametra manja od 135 i veca od 355
+	 * @throws RuntimeException ako je vrednost unetog parametra manja od 135 ili veca od 355
+	 * 
 	 */
 	public void setSirina(int sirina) {
-		if (sirina < 135 && sirina > 355)
+		if (sirina < 135 || sirina > 355)
 			throw new RuntimeException("Sirina van opsega");
 	this.sirina = sirina;
 		}
@@ -96,7 +97,7 @@ public class AutoGuma {
 	/**
 	 * Metoda koja postavlja novu vrednost za atribut visina gume na osnovu unetog parametra
 	 * @param visina je nova vrednost za visinu gume i to kao int vrednost
-	 * @throws RuntimeException ako je vrednost unetog parametra manja od 25 i veca od 95
+	 * @throws RuntimeException ako je vrednost unetog parametra manja od 25 ili veca od 95
 	 */
 	public void setVisina(int visina) {
 		if (visina < 25 || visina > 95)
