@@ -10,6 +10,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import gume.AutoGuma;
+import gume.radnja.VulkanizerskaRadnja;
 
 /**
  * @author Dusan
